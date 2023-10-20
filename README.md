@@ -4,7 +4,7 @@
 **Project setup**
 
 ```
-git clone https://github.com/Nikita-Filonov/playwright_python.git
+git clone https://github.com/Farruh94/FinalProject.git
 cd playwright_python
 
 pip install virtualenv
