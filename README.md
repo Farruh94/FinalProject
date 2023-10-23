@@ -5,7 +5,7 @@
 
 ```
 git clone https://github.com/Farruh94/FinalProject.git
-cd playwright_python
+cd FinalProject
 
 pip install virtualenv
 virtualenv venv
