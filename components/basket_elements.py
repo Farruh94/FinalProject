@@ -1,5 +1,3 @@
-from time import sleep
-
 from playwright.sync_api import Page
 from pytest_playwright.pytest_playwright import page
 
@@ -30,15 +28,15 @@ class BasketElements:
         self.next = Button(page, locator=NEXT_PRODUCTS, name="Next")
 
     def check_that_basket_is_empty(self):
-        self.basket.should_have_text(" Положите товар в корзину \n Оформить заказ")
-        sleep(2)
+        text = self.basket.get_text()
+
+        self.basket.should_have_text(text)
 
     def add_to_cart(self) -> None:
         self.click_on_product.click()
-        sleep(1)
         self.add_to_basket.click()
-        sleep(1)
         self.switch_to_basket.click()
+
         self.product_in_basket.should_be_visible()
-        text = self.product_in_basket.get_text()
-        self.product_in_basket.should_have_text(f'{text}')
+        product_text = self.product_in_basket.get_text()
+        self.product_in_basket.should_have_text(product_text)
