@@ -1,16 +1,39 @@
 from playwright.sync_api import Page
 
-
+from components.main_page_elements import MainPageElements
+# from components import SideBar, MainPageElements
+from components.sidebar import SideBar
 from pages.base_page import BasePage
-from page_factory.text import Text
 
 
 class CentrSvyazi(BasePage):
     def __init__(self, page: Page) -> None:
         super().__init__(page)
 
-        self.register_button = Text(page, locator=".logo > a:nth-child(1) > p", name="Центр Связи")
+    @staticmethod
+    def visible_logo(logo: MainPageElements):
+        logo.check_that_logo_is_visible()
 
-    def logo(self, logo: str):
-        self.register_button.should_be_visible(logo=logo)
-        self.register_button.should_have_text("Центр Связи")
+    @staticmethod
+    def visit_mobile(mobile_phone: SideBar):
+        mobile_phone.mobile_hover()
+
+    @staticmethod
+    def address(check_address: MainPageElements):
+        check_address.check_addresses()
+
+    @staticmethod
+    def social_media(check_social_network: MainPageElements):
+        check_social_network.check_social_media()
+
+    @staticmethod
+    def credit(check_credit: MainPageElements):
+        check_credit.check_credit()
+
+    @staticmethod
+    def trade_in(check_trade_in: MainPageElements):
+        check_trade_in.check_trade_in()
+
+    @staticmethod
+    def delivery(check_delivery: MainPageElements):
+        check_delivery.check_delivery()

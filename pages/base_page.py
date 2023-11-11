@@ -8,8 +8,8 @@ class BasePage:
 
     def go_to(self, url: str) -> Response | None:
         with allure.step(f"Open the '{url}'"):
-            return self.page.goto(url, wait_until="load", timeout=100000)
+            return self.page.goto(url, timeout=500000)
 
     def reload(self) -> Response | None:
         with allure.step(f'Reloading page with url "{self.page.url}"'):
-            return self.page.reload(wait_until="domcontentloaded", timeout=100000)
+            return self.page.reload(timeout=50000)
