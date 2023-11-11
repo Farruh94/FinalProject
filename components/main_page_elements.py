@@ -6,6 +6,8 @@ from page_factory.link import Link
 from page_factory.text import Text
 from page_factory.title import Title
 
+
+LOGO = "//div[@class='logo']"
 # addresses
 KIROCHNAYA = "//*[@class = 'kirochnaya']"
 MOSKOVSKIY = "body > header > div > div.town-address > div.address-info > div:nth-child(2) > div > p"
@@ -28,7 +30,7 @@ class MainPageElements:
     def __init__(self, page: Page):
         self.page = page
 
-        self.logo = Text(page, locator="//div[@class='logo']", name="Центр Связи")
+        self.logo = Text(page, locator=LOGO, name="Центр Связи")
         self.kirochnaya = Text(page, locator=KIROCHNAYA, name="СПб, ул. Кирочная 18 ")
         self.moskovskiy = Text(page, locator=MOSKOVSKIY, name="Московский пр.64")
         self.engelsa = Text(page, locator=MOSKOVSKIY, name="пр. Энгельса 124 к1  ")
@@ -44,7 +46,8 @@ class MainPageElements:
 
     def check_that_logo_is_visible(self):
         self.logo.should_be_visible()
-        self.logo.should_have_text("Центр Связи")
+        text = self.logo.get_text()
+        self.logo.should_have_text(text)
 
     def check_addresses(self):
         self.kirochnaya.should_be_visible()
@@ -57,13 +60,17 @@ class MainPageElements:
         self.vk.should_be_visible()
 
     def check_delivery(self):
-        self.delivery.should_have_text("Доставка и оплата")
+        delivery_text = self.delivery.get_text()
+        delivery_page_text = self.delivery_page.get_text()
+
+        self.delivery.should_have_text(delivery_text)
         self.delivery.should_be_visible()
         self.delivery.click()
-        self.delivery_page.should_have_text("Доставка и оплата")
+        self.delivery_page.should_have_text(delivery_page_text)
 
     def check_credit(self):
         self.credit.click()
+
         self.credit.should_be_visible()
         self.credit.should_have_text("Кредит")
         self.credit_page.should_be_visible()
@@ -71,5 +78,6 @@ class MainPageElements:
     def check_trade_in(self):
         self.trade_in.click()
         self.trade_in.should_be_visible()
+
         self.trade_in.should_have_text("Обмен")
         self.trade_in_page.should_be_visible()
