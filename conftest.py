@@ -21,7 +21,7 @@ def browser(request) -> Page:
     elif headless == "False":
         headless = False
     with sync_playwright() as playwright:
-        chromium = playwright.chromium.launch(headless=False)
+        chromium = playwright.chromium.launch(headless=headless)
         context = chromium.new_context(viewport={"width": 1920, "height": 1080})
         yield context.new_page()
 
@@ -31,14 +31,13 @@ def main_page(browser: Page) -> MainPageElements:
     return MainPageElements(browser)
 
 
-
 @pytest.fixture(scope="function")
-def sidebar(browser: Page) -> SideBar:
+def sidebar_elems(browser: Page) -> SideBar:
     return SideBar(browser)
 
 
 @pytest.fixture(scope="function")
-def basket(browser: Page) -> BasketElements:
+def basket_page(browser: Page) -> BasketElements:
     return BasketElements(browser)
 
 
@@ -50,6 +49,7 @@ def sub_menu(browser: Page) -> SubMenu:
 @pytest.fixture(scope="function")
 def category_elements(browser: Page) -> CategoryElements:
     return CategoryElements(browser)
+
 
 @pytest.fixture(scope="function")
 def search(browser: Page) -> SearchField:
@@ -92,9 +92,9 @@ def check_services(browser: Page) -> MainPageElements:
     return MainPageElements(browser)
 
 
-@pytest.fixture(scope="function")
-def sidebar_elems(browser: Page) -> SideBar:
-    return SideBar(browser)
+# @pytest.fixture(scope="function")
+# def sidebar_elems(browser: Page) -> SideBar:
+#     return SideBar(browser)
 
 
 @pytest.fixture(scope="function")
@@ -108,12 +108,12 @@ def empty_basket(browser: Page) -> BasketElements:
 
 
 @pytest.fixture(scope="function")
-def not_empty(browser: Page) -> BasketElements:
+def delivery(browser: Page) -> BasketElements:
     return BasketElements(browser)
 
 
 @pytest.fixture(scope="function")
-def user_info(browser: Page) -> BasketElements:
+def pickup(browser: Page) -> BasketElements:
     return BasketElements(browser)
 
 
@@ -222,6 +222,6 @@ def coffee_filter(browser: Page) -> CategoryElements:
     return CategoryElements(browser)
 
 
-@pytest.fixture(scope="function")
-def search(browser: Page) -> SearchField:
-    return SearchField(browser)
+# @pytest.fixture(scope="function")
+# def search(browser: Page) -> SearchField:
+#     return SearchField(browser)

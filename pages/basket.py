@@ -17,12 +17,12 @@ class Basket(BasePage):
         basket.add_to_cart()
 
     @staticmethod
-    def pickup_order(name, phone, user_info: BasketElements):
-        user_info.add_to_cart()
-        user_info.pickup_product(name=name, phone=phone)
+    def pickup_order(name, phone, pickup: BasketElements):
+        pickup.add_to_cart()
+        pickup.pickup_product(name=name, phone=phone)
 
 
     @staticmethod
-    def order_delivery(name, phone, address, user_info: BasketElements):
-        user_info.add_to_cart()
-        user_info.delivery_product_spb(name=name, phone=phone, address=address)
+    def order_delivery(name, phone, address, delivery: BasketElements):
+        delivery.add_to_cart()
+        delivery.delivery_product_spb(name=name, phone=phone, address=address)
