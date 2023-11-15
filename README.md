@@ -1,21 +1,11 @@
 # Playwright python
 
-
-**Project setup**
+**Project setup && run auto tests**
 
 ```
 git clone https://github.com/Farruh94/FinalProject.git
 cd FinalProject
 
-pip install virtualenv
-virtualenv venv
-source venv/bin/activate
-
-pip install -r requirements.txt
-```
-
-**Starting auto tests**
-
-```
-python -m pytest
+docker build -t <image_name> .
+docker run -p 8000:8000 --name <container_name> <image_name>
 ```

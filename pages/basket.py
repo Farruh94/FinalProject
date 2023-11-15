@@ -15,3 +15,14 @@ class Basket(BasePage):
     @staticmethod
     def basket_with_product(basket: BasketElements):
         basket.add_to_cart()
+
+    @staticmethod
+    def pickup_order(name, phone, user_info: BasketElements):
+        user_info.add_to_cart()
+        user_info.pickup_product(name=name, phone=phone)
+
+
+    @staticmethod
+    def order_delivery(name, phone, address, user_info: BasketElements):
+        user_info.add_to_cart()
+        user_info.delivery_product_spb(name=name, phone=phone, address=address)

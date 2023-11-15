@@ -6,7 +6,6 @@ from page_factory.link import Link
 from page_factory.text import Text
 from page_factory.title import Title
 
-
 LOGO = "//div[@class='logo']"
 # addresses
 KIROCHNAYA = "//*[@class = 'kirochnaya']"
@@ -24,6 +23,7 @@ DELIVERY = ("//div[contains(@class, 'dop-menu')] //a[(contains(@class, 'hide1440
 CREDIT = "//div[contains(@class, 'dop-menu')] // a[(contains(., 'Кредит'))]"
 SERVICE_PAGE = "//*[contains(@class, 'product-title section-main')]"
 TRADE_IN = "//div[contains(@class, 'dop-menu')] // a[(contains(., 'Обмен'))]"
+SERVICES = "div.services.section-main"
 
 
 class MainPageElements:
@@ -43,11 +43,10 @@ class MainPageElements:
         self.credit_page = Title(page, locator=SERVICE_PAGE, name="Кредит")
         self.trade_in = Link(page, locator=TRADE_IN, name="Обмен")
         self.trade_in_page = Title(page, locator=SERVICE_PAGE, name="Обменяй старый телефон или планшет на новый!")
+        self.services = Title(page, locator=SERVICES, name="Дополнительные услуги")
 
     def check_that_logo_is_visible(self):
         self.logo.should_be_visible()
-        text = self.logo.get_text()
-        self.logo.should_have_text(text)
 
     def check_addresses(self):
         self.kirochnaya.should_be_visible()
@@ -61,12 +60,10 @@ class MainPageElements:
 
     def check_delivery(self):
         delivery_text = self.delivery.get_text()
-        delivery_page_text = self.delivery_page.get_text()
 
         self.delivery.should_have_text(delivery_text)
         self.delivery.should_be_visible()
         self.delivery.click()
-        self.delivery_page.should_have_text(delivery_page_text)
 
     def check_credit(self):
         self.credit.click()
@@ -81,3 +78,6 @@ class MainPageElements:
 
         self.trade_in.should_have_text("Обмен")
         self.trade_in_page.should_be_visible()
+
+    def check_services(self):
+        self.services.should_be_visible()
