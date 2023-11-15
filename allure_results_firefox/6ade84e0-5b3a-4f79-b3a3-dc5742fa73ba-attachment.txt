@@ -1,4 +1,0 @@
-<class 'bool'>
-<class 'bool'>
-<class 'bool'>
-<class 'bool'>

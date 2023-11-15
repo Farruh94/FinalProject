@@ -23,6 +23,7 @@ DELIVERY = ("//div[contains(@class, 'dop-menu')] //a[(contains(@class, 'hide1440
 CREDIT = "//div[contains(@class, 'dop-menu')] // a[(contains(., 'Кредит'))]"
 SERVICE_PAGE = "//*[contains(@class, 'product-title section-main')]"
 TRADE_IN = "//div[contains(@class, 'dop-menu')] // a[(contains(., 'Обмен'))]"
+SERVICES = "div.services.section-main"
 
 
 class MainPageElements:
@@ -42,6 +43,7 @@ class MainPageElements:
         self.credit_page = Title(page, locator=SERVICE_PAGE, name="Кредит")
         self.trade_in = Link(page, locator=TRADE_IN, name="Обмен")
         self.trade_in_page = Title(page, locator=SERVICE_PAGE, name="Обменяй старый телефон или планшет на новый!")
+        self.services = Title(page, locator=SERVICES, name="Дополнительные услуги")
 
     def check_that_logo_is_visible(self):
         self.logo.should_be_visible()
@@ -76,3 +78,6 @@ class MainPageElements:
 
         self.trade_in.should_have_text("Обмен")
         self.trade_in_page.should_be_visible()
+
+    def check_services(self):
+        self.services.should_be_visible()

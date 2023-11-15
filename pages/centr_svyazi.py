@@ -40,8 +40,11 @@ class CentrSvyazi(BasePage):
         check_delivery.check_delivery()
 
     @staticmethod
+    def services(check_services: MainPageElements):
+        check_services.check_services()
 
-    def search_1(search_inp, search: SearchField):
+    @staticmethod
+    def search_field_check(search_inp, search: SearchField):
         search.search_field()
         search.find_result(result_number=0, search_inp=search_inp)
 
