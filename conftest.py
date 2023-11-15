@@ -2,92 +2,184 @@ import pytest
 from playwright.sync_api import Page, sync_playwright
 
 from components.basket_elements import BasketElements
+from components.categories_elements import CategoryElements
 from components.main_page_elements import MainPageElements
-from components.sidebar import SideBar
-from pages.centr_svyazi import CentrSvyazi
+from components.search_field import SearchField
+from components.sidebar_elements import SideBar
+from components.sub_menu_elements import SubMenu
 
 
-# from pages.centr_svyazi_main import CentrSvyaziMain
+def pytest_addoption(parser):
+    parser.addoption("--headless", default=True, help="Run browser in headless mode")
 
 
-@pytest.fixture(scope="function")
-def chromium_page() -> Page:
+@pytest.fixture(scope="session")
+def browser(request) -> Page:
+    headless = request.config.getoption("--headless")
+    if headless == "True":
+        headless = True
+    elif headless == "False":
+        headless = False
     with sync_playwright() as playwright:
-        chromium = playwright.chromium.launch(headless=False)
+        chromium = playwright.chromium.launch(headless=headless)
         context = chromium.new_context(viewport={"width": 1920, "height": 1080})
         yield context.new_page()
 
 
-# @pytest.fixture(scope="function")
-# def centr_svyazi_main(chromium_page: Page) -> CentrSvyaziMain:
-#     return CentrSvyaziMain(chromium_page)
-
-
-# @pytest.fixture(scope="function")
-# def centr_svyazi_logo(chromium_page: Page) -> CentrSvyazi:
-#     return CentrSvyazi(chromium_page)
-
-
-# @pytest.fixture(scope="function")
-# def catalog(chromium_page: Page) -> SideBar:
-#     return SideBar(chromium_page)
-
-
-# @pytest.fixture(scope="function")
-# def menu(chromium_page: Page) -> SideBar:
-#     return SideBar(chromium_page)
-
-
-# @pytest.fixture(scope="function")
-# def mobile_phone(chromium_page: Page) -> CentrSvyazi:
-#     return CentrSvyazi(chromium_page)
+@pytest.fixture(scope="function")
+def sidebar_elems(browser: Page) -> SideBar:
+    return SideBar(browser)
 
 
 @pytest.fixture(scope="function")
-def sidebar_elems(chromium_page: Page) -> SideBar:
-    return SideBar(chromium_page)
+def mobile_hover(browser: Page) -> SideBar:
+    return SideBar(browser)
 
 
 @pytest.fixture(scope="function")
-def mobile_hover(chromium_page: Page) -> SideBar:
-    return SideBar(chromium_page)
+def check_addresses(browser: Page) -> MainPageElements:
+    return MainPageElements(browser)
 
 
 @pytest.fixture(scope="function")
-def check_addresses(chromium_page: Page) -> MainPageElements:
-    return MainPageElements(chromium_page)
+def check_social_media(browser: Page) -> MainPageElements:
+    return MainPageElements(browser)
 
 
 @pytest.fixture(scope="function")
-def check_social_media(chromium_page: Page) -> MainPageElements:
-    return MainPageElements(chromium_page)
+def check_logo(browser: Page) -> MainPageElements:
+    return MainPageElements(browser)
 
 
 @pytest.fixture(scope="function")
-def check_logo(chromium_page: Page) -> MainPageElements:
-    return MainPageElements(chromium_page)
+def check_credit(browser: Page) -> MainPageElements:
+    return MainPageElements(browser)
 
 
 @pytest.fixture(scope="function")
-def empty_basket(chromium_page: Page) -> BasketElements:
-    return BasketElements(chromium_page)
+def check_trade_in(browser: Page) -> MainPageElements:
+    return MainPageElements(browser)
 
 
 @pytest.fixture(scope="function")
-def not_empty(chromium_page: Page) -> BasketElements:
-    return BasketElements(chromium_page)
+def check_delivery(browser: Page) -> MainPageElements:
+    return MainPageElements(browser)
 
 
 @pytest.fixture(scope="function")
-def check_credit(chromium_page: Page) -> MainPageElements:
-    return MainPageElements(chromium_page)
+def empty_basket(browser: Page) -> BasketElements:
+    return BasketElements(browser)
 
 
 @pytest.fixture(scope="function")
-def check_trade_in(chromium_page: Page) -> MainPageElements:
-    return MainPageElements(chromium_page)
+def not_empty(browser: Page) -> BasketElements:
+    return BasketElements(browser)
 
 
 @pytest.fixture(scope="function")
-def check_delivery(chromium_page: Page) -> MainPageElements:
-    return MainPageElements(chromium_page)
+def apple_page(browser: Page) -> SubMenu:
+    return SubMenu(browser)
+
+
+@pytest.fixture(scope="function")
+def samsung_page(browser: Page) -> SubMenu:
+    return SubMenu(browser)
+
+
+@pytest.fixture(scope="function")
+def xiaomi_page(browser: Page) -> SubMenu:
+    return SubMenu(browser)
+
+
+@pytest.fixture(scope="function")
+def sony_page(browser: Page) -> SubMenu:
+    return SubMenu(browser)
+
+
+@pytest.fixture(scope="function")
+def realme_page(browser: Page) -> SubMenu:
+    return SubMenu(browser)
+
+
+@pytest.fixture(scope="function")
+def blackview_page(browser: Page) -> SubMenu:
+    return SubMenu(browser)
+
+
+@pytest.fixture(scope="function")
+def zte_page(browser: Page) -> SubMenu:
+    return SubMenu(browser)
+
+
+@pytest.fixture(scope="function")
+def oneplus_page(browser: Page) -> SubMenu:
+    return SubMenu(browser)
+
+
+@pytest.fixture(scope="function")
+def google_page(browser: Page) -> SubMenu:
+    return SubMenu(browser)
+
+
+@pytest.fixture(scope="function")
+def other_page(browser: Page) -> SubMenu:
+    return SubMenu(browser)
+
+
+@pytest.fixture(scope="function")
+def diagonal_checkbox(browser: Page) -> CategoryElements:
+    return CategoryElements(browser)
+
+
+@pytest.fixture(scope="function")
+def mobile_filter(browser: Page) -> CategoryElements:
+    return CategoryElements(browser)
+
+
+@pytest.fixture(scope="function")
+def tablet_filter(browser: Page) -> CategoryElements:
+    return CategoryElements(browser)
+
+
+@pytest.fixture(scope="function")
+def laptop_filter(browser: Page) -> CategoryElements:
+    return CategoryElements(browser)
+
+
+@pytest.fixture(scope="function")
+def headphone_filter(browser: Page) -> CategoryElements:
+    return CategoryElements(browser)
+
+
+@pytest.fixture(scope="function")
+def smartwatch_filter(browser: Page) -> CategoryElements:
+    return CategoryElements(browser)
+
+
+@pytest.fixture(scope="function")
+def constructor_filter(browser: Page) -> CategoryElements:
+    return CategoryElements(browser)
+
+
+@pytest.fixture(scope="function")
+def photo_filter(browser: Page) -> CategoryElements:
+    return CategoryElements(browser)
+
+
+@pytest.fixture(scope="function")
+def tv_filter(browser: Page) -> CategoryElements:
+    return CategoryElements(browser)
+
+
+@pytest.fixture(scope="function")
+def console_filter(browser: Page) -> CategoryElements:
+    return CategoryElements(browser)
+
+
+@pytest.fixture(scope="function")
+def coffee_filter(browser: Page) -> CategoryElements:
+    return CategoryElements(browser)
+
+@pytest.fixture(scope="function")
+def search(browser: Page) -> SearchField:
+    return SearchField(browser)

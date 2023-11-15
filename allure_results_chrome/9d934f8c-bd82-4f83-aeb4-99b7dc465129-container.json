@@ -1,0 +1,16 @@
+{
+  "uuid": "614f7d90-3f4a-4db1-92e8-ab07077742ee",
+  "children": [
+    "3341b0ff-4dc0-4f63-9052-34b8279de8bd"
+  ],
+  "befores": [
+    {
+      "name": "check_logo",
+      "status": "passed",
+      "start": 1699907627791,
+      "stop": 1699907627791
+    }
+  ],
+  "start": 1699907627791,
+  "stop": 1699907638870
+}

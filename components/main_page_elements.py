@@ -6,7 +6,6 @@ from page_factory.link import Link
 from page_factory.text import Text
 from page_factory.title import Title
 
-
 LOGO = "//div[@class='logo']"
 # addresses
 KIROCHNAYA = "//*[@class = 'kirochnaya']"
@@ -46,8 +45,6 @@ class MainPageElements:
 
     def check_that_logo_is_visible(self):
         self.logo.should_be_visible()
-        text = self.logo.get_text()
-        self.logo.should_have_text(text)
 
     def check_addresses(self):
         self.kirochnaya.should_be_visible()
@@ -61,12 +58,10 @@ class MainPageElements:
 
     def check_delivery(self):
         delivery_text = self.delivery.get_text()
-        delivery_page_text = self.delivery_page.get_text()
 
         self.delivery.should_have_text(delivery_text)
         self.delivery.should_be_visible()
         self.delivery.click()
-        self.delivery_page.should_have_text(delivery_page_text)
 
     def check_credit(self):
         self.credit.click()

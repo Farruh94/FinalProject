@@ -40,3 +40,8 @@ class Component(ABC):
         locator = self.get_locator(**kwargs).all_inner_texts()
         text = " ".join(locator)
         return text
+
+    def get_url(self, **kwargs) -> None:
+        with allure.step(f"Checking that {self.type_of} '{self.name}' has url."):
+            url = self.get_url()
+            expect(url).to_have_url(**kwargs)

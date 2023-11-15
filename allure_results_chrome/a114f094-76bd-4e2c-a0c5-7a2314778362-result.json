@@ -1,0 +1,58 @@
+{
+  "name": "test_catalog",
+  "status": "passed",
+  "steps": [
+    {
+      "name": "Open the 'https://centrsvyazi.ru/'",
+      "status": "passed",
+      "start": 1699907671207,
+      "stop": 1699907681821
+    },
+    {
+      "name": "Hovering over button with name \"Сотовые телефоны\"",
+      "status": "passed",
+      "start": 1699907681821,
+      "stop": 1699907681871
+    }
+  ],
+  "start": 1699907671207,
+  "stop": 1699907682083,
+  "uuid": "191606f5-1639-4bb2-8af6-d9c7bb923f31",
+  "historyId": "574fbf7d01fc19fa4649bc947bcbe51d",
+  "testCaseId": "230ed4b6cde4a6167b2500bdcf6c171b",
+  "fullName": "tests.test_main_page.TestMainPage#test_catalog",
+  "labels": [
+    {
+      "name": "parentSuite",
+      "value": "tests"
+    },
+    {
+      "name": "suite",
+      "value": "test_main_page"
+    },
+    {
+      "name": "subSuite",
+      "value": "TestMainPage"
+    },
+    {
+      "name": "host",
+      "value": "kamaz-ThinkPad-E15-Gen-2"
+    },
+    {
+      "name": "thread",
+      "value": "48166-MainThread"
+    },
+    {
+      "name": "framework",
+      "value": "pytest"
+    },
+    {
+      "name": "language",
+      "value": "cpython3"
+    },
+    {
+      "name": "package",
+      "value": "tests.test_main_page"
+    }
+  ]
+}

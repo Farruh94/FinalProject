@@ -1,0 +1,70 @@
+{
+  "name": "test_blackview_page",
+  "status": "passed",
+  "steps": [
+    {
+      "name": "Open the 'https://centrsvyazi.ru/'",
+      "status": "passed",
+      "start": 1699907532370,
+      "stop": 1699907542982
+    },
+    {
+      "name": "Hovering over button with name \"Сотовые телефоны\"",
+      "status": "passed",
+      "start": 1699907542982,
+      "stop": 1699907543051
+    },
+    {
+      "name": "Clicking button with name 'Blackview'",
+      "status": "passed",
+      "start": 1699907543051,
+      "stop": 1699907543827
+    },
+    {
+      "name": "Checking that title 'Product title' has text 'Blackview'",
+      "status": "passed",
+      "start": 1699907543885,
+      "stop": 1699907543952
+    }
+  ],
+  "start": 1699907532370,
+  "stop": 1699907544239,
+  "uuid": "c9e5a2f0-d71c-4b4c-8f76-fff0dbe225a4",
+  "historyId": "0d26baa5afa75cb23eb96aa8525a7aa0",
+  "testCaseId": "e40d8efdd3f2bb2af61da9b797fb65e7",
+  "fullName": "tests.test_categories.TestCategoryPage#test_blackview_page",
+  "labels": [
+    {
+      "name": "parentSuite",
+      "value": "tests"
+    },
+    {
+      "name": "suite",
+      "value": "test_categories"
+    },
+    {
+      "name": "subSuite",
+      "value": "TestCategoryPage"
+    },
+    {
+      "name": "host",
+      "value": "kamaz-ThinkPad-E15-Gen-2"
+    },
+    {
+      "name": "thread",
+      "value": "48166-MainThread"
+    },
+    {
+      "name": "framework",
+      "value": "pytest"
+    },
+    {
+      "name": "language",
+      "value": "cpython3"
+    },
+    {
+      "name": "package",
+      "value": "tests.test_categories"
+    }
+  ]
+}

@@ -1,6 +1,5 @@
 # Playwright python
 
-
 **Project setup**
 
 ```

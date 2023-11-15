@@ -1,0 +1,70 @@
+{
+  "name": "test_social_media",
+  "status": "passed",
+  "steps": [
+    {
+      "name": "Open the 'https://centrsvyazi.ru/'",
+      "status": "passed",
+      "start": 1699907659877,
+      "stop": 1699907670570
+    },
+    {
+      "name": "Checking that text 'СПб, ул. Кирочная 18 ' is visible",
+      "status": "passed",
+      "start": 1699907670570,
+      "stop": 1699907670606
+    },
+    {
+      "name": "Checking that text 'Московский пр.64' is visible",
+      "status": "passed",
+      "start": 1699907670606,
+      "stop": 1699907670621
+    },
+    {
+      "name": "Checking that text 'пр. Энгельса 124 к1  ' is visible",
+      "status": "passed",
+      "start": 1699907670622,
+      "stop": 1699907670631
+    }
+  ],
+  "start": 1699907659877,
+  "stop": 1699907670839,
+  "uuid": "f0fd4703-00be-4969-b192-5e30c0682650",
+  "historyId": "8883ddb4f626c1e5cc849e712184e9ff",
+  "testCaseId": "e81194d22e55be0881efdef51e6565f7",
+  "fullName": "tests.test_main_page.TestMainPage#test_social_media",
+  "labels": [
+    {
+      "name": "parentSuite",
+      "value": "tests"
+    },
+    {
+      "name": "suite",
+      "value": "test_main_page"
+    },
+    {
+      "name": "subSuite",
+      "value": "TestMainPage"
+    },
+    {
+      "name": "host",
+      "value": "kamaz-ThinkPad-E15-Gen-2"
+    },
+    {
+      "name": "thread",
+      "value": "48166-MainThread"
+    },
+    {
+      "name": "framework",
+      "value": "pytest"
+    },
+    {
+      "name": "language",
+      "value": "cpython3"
+    },
+    {
+      "name": "package",
+      "value": "tests.test_main_page"
+    }
+  ]
+}

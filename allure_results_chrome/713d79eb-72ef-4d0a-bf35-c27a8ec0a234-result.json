@@ -1,0 +1,70 @@
+{
+  "name": "test_delivery",
+  "status": "passed",
+  "steps": [
+    {
+      "name": "Open the 'https://centrsvyazi.ru/'",
+      "status": "passed",
+      "start": 1699907639364,
+      "stop": 1699907650163
+    },
+    {
+      "name": "Checking that link 'Доставка и оплата' has text 'Доставка и оплата'",
+      "status": "passed",
+      "start": 1699907650186,
+      "stop": 1699907650203
+    },
+    {
+      "name": "Checking that link 'Доставка и оплата' is visible",
+      "status": "passed",
+      "start": 1699907650203,
+      "stop": 1699907650211
+    },
+    {
+      "name": "Clicking link with name 'Доставка и оплата'",
+      "status": "passed",
+      "start": 1699907650211,
+      "stop": 1699907650762
+    }
+  ],
+  "start": 1699907639364,
+  "stop": 1699907651024,
+  "uuid": "98cb30fb-ef6c-4905-a478-fb82d6d555f1",
+  "historyId": "841b95c3019d89cad6a75f93de0232b5",
+  "testCaseId": "bdaa950a15ab5054b40005d2e62fd745",
+  "fullName": "tests.test_main_page.TestMainPage#test_delivery",
+  "labels": [
+    {
+      "name": "parentSuite",
+      "value": "tests"
+    },
+    {
+      "name": "suite",
+      "value": "test_main_page"
+    },
+    {
+      "name": "subSuite",
+      "value": "TestMainPage"
+    },
+    {
+      "name": "host",
+      "value": "kamaz-ThinkPad-E15-Gen-2"
+    },
+    {
+      "name": "thread",
+      "value": "48163-MainThread"
+    },
+    {
+      "name": "framework",
+      "value": "pytest"
+    },
+    {
+      "name": "language",
+      "value": "cpython3"
+    },
+    {
+      "name": "package",
+      "value": "tests.test_main_page"
+    }
+  ]
+}

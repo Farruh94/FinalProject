@@ -1,0 +1,70 @@
+{
+  "name": "test_samsung_page",
+  "status": "passed",
+  "steps": [
+    {
+      "name": "Open the 'https://centrsvyazi.ru/'",
+      "status": "passed",
+      "start": 1699907481480,
+      "stop": 1699907492125
+    },
+    {
+      "name": "Hovering over button with name \"Сотовые телефоны\"",
+      "status": "passed",
+      "start": 1699907492125,
+      "stop": 1699907492197
+    },
+    {
+      "name": "Clicking button with name 'Samsung'",
+      "status": "passed",
+      "start": 1699907492197,
+      "stop": 1699907493010
+    },
+    {
+      "name": "Checking that title 'Product title' has text 'Samsung'",
+      "status": "passed",
+      "start": 1699907493160,
+      "stop": 1699907493411
+    }
+  ],
+  "start": 1699907481479,
+  "stop": 1699907493944,
+  "uuid": "2b6f3290-d0fe-4092-ac7a-b812ccf98c1b",
+  "historyId": "34d99c69ab56c6ea85b6c74f48d4bc9b",
+  "testCaseId": "d810df3ee3ca7cee0e7e2abe53e3fe25",
+  "fullName": "tests.test_categories.TestCategoryPage#test_samsung_page",
+  "labels": [
+    {
+      "name": "parentSuite",
+      "value": "tests"
+    },
+    {
+      "name": "suite",
+      "value": "test_categories"
+    },
+    {
+      "name": "subSuite",
+      "value": "TestCategoryPage"
+    },
+    {
+      "name": "host",
+      "value": "kamaz-ThinkPad-E15-Gen-2"
+    },
+    {
+      "name": "thread",
+      "value": "48166-MainThread"
+    },
+    {
+      "name": "framework",
+      "value": "pytest"
+    },
+    {
+      "name": "language",
+      "value": "cpython3"
+    },
+    {
+      "name": "package",
+      "value": "tests.test_categories"
+    }
+  ]
+}

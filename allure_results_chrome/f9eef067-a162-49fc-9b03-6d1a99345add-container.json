@@ -1,0 +1,16 @@
+{
+  "uuid": "6d3c7bcf-33b6-4104-ac68-8ffddf781dd2",
+  "children": [
+    "ed07306c-5b91-48b0-825f-1e7467b59b04"
+  ],
+  "befores": [
+    {
+      "name": "check_credit",
+      "status": "passed",
+      "start": 1699907647663,
+      "stop": 1699907647664
+    }
+  ],
+  "start": 1699907647663,
+  "stop": 1699907659319
+}

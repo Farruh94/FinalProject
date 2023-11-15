@@ -1,0 +1,58 @@
+{
+  "name": "test_logo",
+  "status": "passed",
+  "steps": [
+    {
+      "name": "Open the 'https://centrsvyazi.ru/'",
+      "status": "passed",
+      "start": 1699907627791,
+      "stop": 1699907638616
+    },
+    {
+      "name": "Checking that text 'Центр Связи' is visible",
+      "status": "passed",
+      "start": 1699907638616,
+      "stop": 1699907638639
+    }
+  ],
+  "start": 1699907627791,
+  "stop": 1699907638870,
+  "uuid": "3341b0ff-4dc0-4f63-9052-34b8279de8bd",
+  "historyId": "c125ad636e180dfa2af953483927a8f3",
+  "testCaseId": "070e0605c5d4acce7ae68d88013b8d84",
+  "fullName": "tests.test_main_page.TestMainPage#test_logo",
+  "labels": [
+    {
+      "name": "parentSuite",
+      "value": "tests"
+    },
+    {
+      "name": "suite",
+      "value": "test_main_page"
+    },
+    {
+      "name": "subSuite",
+      "value": "TestMainPage"
+    },
+    {
+      "name": "host",
+      "value": "kamaz-ThinkPad-E15-Gen-2"
+    },
+    {
+      "name": "thread",
+      "value": "48163-MainThread"
+    },
+    {
+      "name": "framework",
+      "value": "pytest"
+    },
+    {
+      "name": "language",
+      "value": "cpython3"
+    },
+    {
+      "name": "package",
+      "value": "tests.test_main_page"
+    }
+  ]
+}

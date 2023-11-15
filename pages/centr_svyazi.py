@@ -1,8 +1,9 @@
+import pytest
 from playwright.sync_api import Page
 
 from components.main_page_elements import MainPageElements
-# from components import SideBar, MainPageElements
-from components.sidebar import SideBar
+from components.search_field import SearchField
+from components.sidebar_elements import SideBar
 from pages.base_page import BasePage
 
 
@@ -37,3 +38,10 @@ class CentrSvyazi(BasePage):
     @staticmethod
     def delivery(check_delivery: MainPageElements):
         check_delivery.check_delivery()
+
+    @staticmethod
+
+    def search_1(search_inp, search: SearchField):
+        search.search_field()
+        search.find_result(result_number=0, search_inp=search_inp)
+

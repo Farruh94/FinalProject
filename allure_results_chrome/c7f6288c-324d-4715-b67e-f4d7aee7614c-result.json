@@ -1,0 +1,88 @@
+{
+  "name": "test_mobile_filter",
+  "status": "passed",
+  "steps": [
+    {
+      "name": "Open the 'https://centrsvyazi.ru/'",
+      "status": "passed",
+      "start": 1699907545550,
+      "stop": 1699907556283
+    },
+    {
+      "name": "Clicking button with name 'Сотовые телефоны'",
+      "status": "passed",
+      "start": 1699907556284,
+      "stop": 1699907556995
+    },
+    {
+      "name": "Hovering over checkbox with name \"1st checkbox\"",
+      "status": "passed",
+      "start": 1699907556995,
+      "stop": 1699907557275
+    },
+    {
+      "name": "Hovering over checkbox with name \"1st ram checkbox\"",
+      "status": "passed",
+      "start": 1699907557275,
+      "stop": 1699907557524
+    },
+    {
+      "name": "Hovering over checkbox with name \"1st rom checkbox\"",
+      "status": "passed",
+      "start": 1699907557524,
+      "stop": 1699907557639
+    },
+    {
+      "name": "Clicking button with name 'Применить фильтры'",
+      "status": "passed",
+      "start": 1699907557639,
+      "stop": 1699907558471
+    },
+    {
+      "name": "Checking that title 'Товары' is visible",
+      "status": "passed",
+      "start": 1699907558472,
+      "stop": 1699907558518
+    }
+  ],
+  "start": 1699907545550,
+  "stop": 1699907558720,
+  "uuid": "035b2c5e-e0d9-4970-b539-3c411fd6f61b",
+  "historyId": "d38e10f21d7bc145eb9f52bf3a249891",
+  "testCaseId": "de2d62112256537652470c85a5954ca2",
+  "fullName": "tests.test_categories.TestCategoryPage#test_mobile_filter",
+  "labels": [
+    {
+      "name": "parentSuite",
+      "value": "tests"
+    },
+    {
+      "name": "suite",
+      "value": "test_categories"
+    },
+    {
+      "name": "subSuite",
+      "value": "TestCategoryPage"
+    },
+    {
+      "name": "host",
+      "value": "kamaz-ThinkPad-E15-Gen-2"
+    },
+    {
+      "name": "thread",
+      "value": "48163-MainThread"
+    },
+    {
+      "name": "framework",
+      "value": "pytest"
+    },
+    {
+      "name": "language",
+      "value": "cpython3"
+    },
+    {
+      "name": "package",
+      "value": "tests.test_categories"
+    }
+  ]
+}

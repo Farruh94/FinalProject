@@ -1,0 +1,16 @@
+{
+  "uuid": "252c5f82-634d-44c1-8180-e47908e35ac8",
+  "children": [
+    "ba5b6b03-8b99-45e2-8bc2-16d2798cdeeb"
+  ],
+  "befores": [
+    {
+      "name": "diagonal_checkbox",
+      "status": "passed",
+      "start": 1699907532692,
+      "stop": 1699907532692
+    }
+  ],
+  "start": 1699907532692,
+  "stop": 1699907544947
+}

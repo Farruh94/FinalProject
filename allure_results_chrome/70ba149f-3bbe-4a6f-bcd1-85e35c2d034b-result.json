@@ -1,0 +1,88 @@
+{
+  "name": "test_smartwatch_filter",
+  "status": "passed",
+  "steps": [
+    {
+      "name": "Open the 'https://centrsvyazi.ru/'",
+      "status": "passed",
+      "start": 1699907599620,
+      "stop": 1699907610373
+    },
+    {
+      "name": "Clicking button with name 'Ноутбуки'",
+      "status": "passed",
+      "start": 1699907610373,
+      "stop": 1699907611163
+    },
+    {
+      "name": "Hovering over checkbox with name \"1st brand\"",
+      "status": "passed",
+      "start": 1699907611163,
+      "stop": 1699907611664
+    },
+    {
+      "name": "Hovering over checkbox with name \"1st brand\"",
+      "status": "passed",
+      "start": 1699907611665,
+      "stop": 1699907611673
+    },
+    {
+      "name": "Hovering over checkbox with name \"1st ram checkbox\"",
+      "status": "passed",
+      "start": 1699907611674,
+      "stop": 1699907611839
+    },
+    {
+      "name": "Clicking button with name 'Применить фильтры'",
+      "status": "passed",
+      "start": 1699907611839,
+      "stop": 1699907612810
+    },
+    {
+      "name": "Checking that title 'Товары' is visible",
+      "status": "passed",
+      "start": 1699907612810,
+      "stop": 1699907612879
+    }
+  ],
+  "start": 1699907599620,
+  "stop": 1699907613180,
+  "uuid": "4fa4c4c7-d178-479d-8658-80364f68d4e7",
+  "historyId": "638ecb230906a6f8dc56307f298bf06b",
+  "testCaseId": "6f039810882f94177ce2c71ce97553a0",
+  "fullName": "tests.test_categories.TestCategoryPage#test_smartwatch_filter",
+  "labels": [
+    {
+      "name": "parentSuite",
+      "value": "tests"
+    },
+    {
+      "name": "suite",
+      "value": "test_categories"
+    },
+    {
+      "name": "subSuite",
+      "value": "TestCategoryPage"
+    },
+    {
+      "name": "host",
+      "value": "kamaz-ThinkPad-E15-Gen-2"
+    },
+    {
+      "name": "thread",
+      "value": "48163-MainThread"
+    },
+    {
+      "name": "framework",
+      "value": "pytest"
+    },
+    {
+      "name": "language",
+      "value": "cpython3"
+    },
+    {
+      "name": "package",
+      "value": "tests.test_categories"
+    }
+  ]
+}

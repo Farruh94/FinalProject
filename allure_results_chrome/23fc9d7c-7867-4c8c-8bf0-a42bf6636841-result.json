@@ -1,0 +1,88 @@
+{
+  "name": "test_constructor_filter",
+  "status": "passed",
+  "steps": [
+    {
+      "name": "Open the 'https://centrsvyazi.ru/'",
+      "status": "passed",
+      "start": 1699907581171,
+      "stop": 1699907591954
+    },
+    {
+      "name": "Clicking button with name 'Ноутбуки'",
+      "status": "passed",
+      "start": 1699907591954,
+      "stop": 1699907592735
+    },
+    {
+      "name": "Hovering over checkbox with name \"1st brand\"",
+      "status": "passed",
+      "start": 1699907592735,
+      "stop": 1699907593076
+    },
+    {
+      "name": "Hovering over checkbox with name \"1st brand\"",
+      "status": "passed",
+      "start": 1699907593076,
+      "stop": 1699907593083
+    },
+    {
+      "name": "Hovering over checkbox with name \"1st ram checkbox\"",
+      "status": "passed",
+      "start": 1699907593083,
+      "stop": 1699907593171
+    },
+    {
+      "name": "Clicking button with name 'Применить фильтры'",
+      "status": "passed",
+      "start": 1699907593171,
+      "stop": 1699907593961
+    },
+    {
+      "name": "Checking that title 'Товары' is visible",
+      "status": "passed",
+      "start": 1699907593961,
+      "stop": 1699907594033
+    }
+  ],
+  "start": 1699907581170,
+  "stop": 1699907594365,
+  "uuid": "81947516-be7f-42c0-847e-d315f0738d1c",
+  "historyId": "81f18b58832c74ac882be70182a34f4e",
+  "testCaseId": "398e4f8d3fa5e640acfae775a5ea5602",
+  "fullName": "tests.test_categories.TestCategoryPage#test_constructor_filter",
+  "labels": [
+    {
+      "name": "parentSuite",
+      "value": "tests"
+    },
+    {
+      "name": "suite",
+      "value": "test_categories"
+    },
+    {
+      "name": "subSuite",
+      "value": "TestCategoryPage"
+    },
+    {
+      "name": "host",
+      "value": "kamaz-ThinkPad-E15-Gen-2"
+    },
+    {
+      "name": "thread",
+      "value": "48166-MainThread"
+    },
+    {
+      "name": "framework",
+      "value": "pytest"
+    },
+    {
+      "name": "language",
+      "value": "cpython3"
+    },
+    {
+      "name": "package",
+      "value": "tests.test_categories"
+    }
+  ]
+}
