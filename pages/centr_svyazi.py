@@ -12,8 +12,8 @@ class CentrSvyazi(BasePage):
         super().__init__(page)
 
     @staticmethod
-    def visible_logo(logo: MainPageElements):
-        logo.check_that_logo_is_visible()
+    def visible_logo(main_page: MainPageElements):
+        main_page.check_that_logo_is_visible()
 
     @staticmethod
     def visit_mobile(sidebar: SideBar):

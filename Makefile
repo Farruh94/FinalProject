@@ -1,5 +1,5 @@
 test_chrome_headless:
-	pytest --reruns 5 -n 3 --headless=True  --browser=chromium --alluredir=allure_results_chrome
+	pytest --reruns 5 -n 3 --headless=True  --browser=chromiumallure_results_chrome
 test_chrome:
 	pytest --reruns 5 -n 3 --headless=False  --browser=chromium --alluredir=allure_results_chrome
 
