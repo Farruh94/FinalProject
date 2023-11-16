@@ -59,6 +59,9 @@ class BasketElements:
 
     def pickup_product(self, name: str, phone: str) -> None:
 
+        self.click_on_product.click()
+        self.add_to_basket.click()
+        self.switch_to_basket.click()
         self.shop_address.check()
         self.payment_type.check()
         self.name_input.fill(name, validate_value=True)
@@ -72,6 +75,9 @@ class BasketElements:
 
     def delivery_product_spb(self, name: str, phone: str, address: str) -> None:
 
+        self.click_on_product.click()
+        self.add_to_basket.click()
+        self.switch_to_basket.click()
         self.delivery_spb.click()
 
         self.name_input.fill(name, validate_value=True)

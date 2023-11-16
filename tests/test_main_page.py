@@ -50,7 +50,7 @@ class TestMainPage:
         social_media = CentrSvyazi(browser)
         social_media.go_to(BASE_URL)
 
-        social_media.address(main_page)
+        social_media.social_media(main_page)
         browser.screenshot(path=f"./screenshot/screenshot{datetime.now()}.png")
 
     def test_services(self, browser, main_page: MainPageElements):
@@ -64,13 +64,6 @@ class TestMainPage:
         sidebar.go_to(BASE_URL)
 
         sidebar_elems.sidebar_items()
-        browser.screenshot(path=f"./screenshot/screenshot{datetime.now()}.png")
-
-    def test_catalog(self, browser, side_bar: SideBar):
-        mobile_catalog = CentrSvyazi(browser)
-        mobile_catalog.go_to(BASE_URL)
-
-        mobile_catalog.visit_mobile(side_bar)
         browser.screenshot(path=f"./screenshot/screenshot{datetime.now()}.png")
 
     @pytest.mark.parametrize('search_inp', ['xiaomi'])

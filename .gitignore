@@ -2,4 +2,6 @@ venv
 .idea
 __pycache__
 .pytest_cache
-
+allure_results_chrome
+allure_results_firefox
+screenshot

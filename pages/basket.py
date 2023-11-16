@@ -18,11 +18,9 @@ class Basket(BasePage):
 
     @staticmethod
     def pickup_order(name, phone, pickup: BasketElements):
-        pickup.add_to_cart()
-        pickup.pickup_product(name=name, phone=phone)
 
+        pickup.pickup_product(name=name, phone=phone)
 
     @staticmethod
     def order_delivery(name, phone, address, delivery: BasketElements):
-        delivery.add_to_cart()
         delivery.delivery_product_spb(name=name, phone=phone, address=address)
