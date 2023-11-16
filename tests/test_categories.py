@@ -78,6 +78,146 @@ class TestCategoryPage:
 
         browser.screenshot(path=f"./screenshot/screenshot{datetime.now()}.png")
 
+    def test_health_page(self, browser, sub_menu: SubMenu):
+        health = Categories(browser)
+        health.go_to(BASE_URL)
+        health.health_page(sub_menu)
+
+        browser.screenshot(path=f"./screenshot/screenshot{datetime.now()}.png")
+
+    def test_mono_page(self, browser, sub_menu: SubMenu):
+        mono = Categories(browser)
+        mono.go_to(BASE_URL)
+        mono.mono_page(sub_menu)
+
+        browser.screenshot(path=f"./screenshot/screenshot{datetime.now()}.png")
+
+    def test_mouse_page(self, browser, sub_menu: SubMenu):
+        mouse = Categories(browser)
+        mouse.go_to(BASE_URL)
+        mouse.mouse_page(sub_menu)
+
+        browser.screenshot(path=f"./screenshot/screenshot{datetime.now()}.png")
+
+    def test_acoustic_page(self, browser, sub_menu: SubMenu):
+        acoustic = Categories(browser)
+        acoustic.go_to(BASE_URL)
+        acoustic.acoustic_page(sub_menu)
+
+        browser.screenshot(path=f"./screenshot/screenshot{datetime.now()}.png")
+
+    def test_system_unit_page(self, browser, sub_menu: SubMenu):
+        system_unit = Categories(browser)
+        system_unit.go_to(BASE_URL)
+        system_unit.system_unit_page(sub_menu)
+
+        browser.screenshot(path=f"./screenshot/screenshot{datetime.now()}.png")
+
+    def test_ram_page(self, browser, sub_menu: SubMenu):
+        ram = Categories(browser)
+        ram.go_to(BASE_URL)
+        ram.ram_page(sub_menu)
+
+        browser.screenshot(path=f"./screenshot/screenshot{datetime.now()}.png")
+
+    def test_rom_page(self, browser, sub_menu: SubMenu):
+        rom = Categories(browser)
+        rom.go_to(BASE_URL)
+        rom.rom_page(sub_menu)
+
+        browser.screenshot(path=f"./screenshot/screenshot{datetime.now()}.png")
+
+    def test_microphone_page(self, browser, sub_menu: SubMenu):
+        microphone = Categories(browser)
+        microphone.go_to(BASE_URL)
+        microphone.microphone_page(sub_menu)
+
+        browser.screenshot(path=f"./screenshot/screenshot{datetime.now()}.png")
+
+    def test_webcam_page(self, browser, sub_menu: SubMenu):
+        webcam = Categories(browser)
+        webcam.go_to(BASE_URL)
+        webcam.webcam_page(sub_menu)
+
+        browser.screenshot(path=f"./screenshot/screenshot{datetime.now()}.png")
+
+    def test_quad_page(self, browser, sub_menu: SubMenu):
+        quad = Categories(browser)
+        quad.go_to(BASE_URL)
+        quad.quad_page(sub_menu)
+
+        browser.screenshot(path=f"./screenshot/screenshot{datetime.now()}.png")
+
+    def test_gps_page(self, browser, sub_menu: SubMenu):
+        gps = Categories(browser)
+        gps.go_to(BASE_URL)
+        gps.gps_page(sub_menu)
+
+        browser.screenshot(path=f"./screenshot/screenshot{datetime.now()}.png")
+
+    def test_camera_page(self, browser, sub_menu: SubMenu):
+        camera = Categories(browser)
+        camera.go_to(BASE_URL)
+        camera.camera_page(sub_menu)
+
+        browser.screenshot(path=f"./screenshot/screenshot{datetime.now()}.png")
+
+    def test_router_page(self, browser, sub_menu: SubMenu):
+        router = Categories(browser)
+        router.go_to(BASE_URL)
+        router.router_page(sub_menu)
+
+        browser.screenshot(path=f"./screenshot/screenshot{datetime.now()}.png")
+
+    def test_vacuum_cleaner_page(self, browser, sub_menu: SubMenu):
+        vacuum = Categories(browser)
+        vacuum.go_to(BASE_URL)
+        vacuum.vacuum_cleaner_page(sub_menu)
+
+        browser.screenshot(path=f"./screenshot/screenshot{datetime.now()}.png")
+
+    def test_lamp_cleaner_page(self, browser, sub_menu: SubMenu):
+        lamp = Categories(browser)
+        lamp.go_to(BASE_URL)
+        lamp.lamp_page(sub_menu)
+
+        browser.screenshot(path=f"./screenshot/screenshot{datetime.now()}.png")
+
+    def test_dryer_page(self, browser, sub_menu: SubMenu):
+        dryer = Categories(browser)
+        dryer.go_to(BASE_URL)
+        dryer.dryer_page(sub_menu)
+
+        browser.screenshot(path=f"./screenshot/screenshot{datetime.now()}.png")
+
+    def test_toothbrush_page(self, browser, sub_menu: SubMenu):
+        toothbrush = Categories(browser)
+        toothbrush.go_to(BASE_URL)
+        toothbrush.toothbrush_page(sub_menu)
+
+        browser.screenshot(path=f"./screenshot/screenshot{datetime.now()}.png")
+
+    def test_amateur_camera_page(self, browser, sub_menu: SubMenu):
+        amateur_camera = Categories(browser)
+        amateur_camera.go_to(BASE_URL)
+        amateur_camera.amateur_camera_page(sub_menu)
+
+        browser.screenshot(path=f"./screenshot/screenshot{datetime.now()}.png")
+
+    def test_pro_camera_page(self, browser, sub_menu: SubMenu):
+        pro_camera = Categories(browser)
+        pro_camera.go_to(BASE_URL)
+        pro_camera.pro_camera_page(sub_menu)
+
+        browser.screenshot(path=f"./screenshot/screenshot{datetime.now()}.png")
+
+    def test_lens_page(self, browser, sub_menu: SubMenu):
+        lens = Categories(browser)
+        lens.go_to(BASE_URL)
+        lens.lens_page(sub_menu)
+
+        browser.screenshot(path=f"./screenshot/screenshot{datetime.now()}.png")
+
     def test_diagonal_checkboxes(self, browser, category_elements: CategoryElements):
         checkbox = Categories(browser)
         checkbox.go_to(BASE_URL)

@@ -7,3 +7,4 @@ RUN pip install --trusted-host pypi.python.org -r requirements.txt && playwright
 RUN apt install -y allure
 COPY . .
 CMD ["make","serve_results_chrome"]
+VOLUME ["/FinalProject"]
