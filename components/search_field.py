@@ -20,6 +20,5 @@ class SearchField:
         self.search_input.fill(search_inp, validate_value=True)
         self.search_input.should_have_value(search_inp)
         self.search_result.click(result_number=result_number)
-        result_text = self.search_result.get_text()
-        self.search_result.should_have_text(result_text)
+
 

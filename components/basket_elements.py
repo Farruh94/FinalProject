@@ -23,6 +23,7 @@ DELIVERY_SPB = "[id=cart-dspb]"
 DELIVERY_ADDRESS = "[id=order-address]"
 DELIVERY_TYPE = "[id=ord5]"
 
+
 class BasketElements:
     def __init__(self, page: Page):
         self.page = page
@@ -58,7 +59,9 @@ class BasketElements:
         self.product_in_basket.should_have_text(product_text)
 
     def pickup_product(self, name: str, phone: str) -> None:
-
+        self.click_on_product.click()
+        self.add_to_basket.click()
+        self.switch_to_basket.click()
         self.shop_address.check()
         self.payment_type.check()
         self.name_input.fill(name, validate_value=True)
@@ -71,7 +74,9 @@ class BasketElements:
         self.phone_input.should_be_visible()
 
     def delivery_product_spb(self, name: str, phone: str, address: str) -> None:
-
+        self.click_on_product.click()
+        self.add_to_basket.click()
+        self.switch_to_basket.click()
         self.delivery_spb.click()
 
         self.name_input.fill(name, validate_value=True)
@@ -84,7 +89,3 @@ class BasketElements:
         self.name_input.should_have_value(name)
         self.phone_input.should_be_visible()
         self.delivery_address.should_have_value(address)
-
-
-
-

@@ -54,5 +54,12 @@ class SideBar:
         self.discount.should_be_visible()
         self.used.should_be_visible()
 
-    def mobile_hover(self):
+    def mobile_cat(self):
         self.mobile_phone.hover()
+
+    def other_cat(self):
+        self.other.hover()
+
+    def photo_cat(self):
+        self.photo.hover()
+

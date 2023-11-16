@@ -12,36 +12,36 @@ class CentrSvyazi(BasePage):
         super().__init__(page)
 
     @staticmethod
-    def visible_logo(logo: MainPageElements):
-        logo.check_that_logo_is_visible()
+    def visible_logo(main_page: MainPageElements):
+        main_page.check_that_logo_is_visible()
 
     @staticmethod
-    def visit_mobile(mobile_phone: SideBar):
-        mobile_phone.mobile_hover()
+    def visit_mobile(sidebar: SideBar):
+        sidebar.mobile_cat()
 
     @staticmethod
-    def address(check_address: MainPageElements):
-        check_address.check_addresses()
+    def address(main_page: MainPageElements):
+        main_page.check_addresses()
 
     @staticmethod
-    def social_media(check_social_network: MainPageElements):
-        check_social_network.check_social_media()
+    def social_media(main_page: MainPageElements):
+        main_page.check_social_media()
 
     @staticmethod
-    def credit(check_credit: MainPageElements):
-        check_credit.check_credit()
+    def credit(main_page: MainPageElements):
+        main_page.check_credit()
 
     @staticmethod
-    def trade_in(check_trade_in: MainPageElements):
-        check_trade_in.check_trade_in()
+    def trade_in(main_page: MainPageElements):
+        main_page.check_trade_in()
 
     @staticmethod
-    def delivery(check_delivery: MainPageElements):
-        check_delivery.check_delivery()
+    def delivery(main_page: MainPageElements):
+        main_page.check_delivery()
 
     @staticmethod
-    def services(check_services: MainPageElements):
-        check_services.check_services()
+    def services(main_page: MainPageElements):
+        main_page.check_services()
 
     @staticmethod
     def search_field_check(search_inp, search: SearchField):

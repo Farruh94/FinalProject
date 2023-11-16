@@ -10,85 +10,169 @@ class Categories(BasePage):
         super().__init__(page)
 
     @staticmethod
-    def apple_page(page_apple: SubMenu):
-        page_apple.page_apple()
+    def mobile_phones(submenu: SubMenu):
+        submenu.mobile_categories()
 
     @staticmethod
-    def samsung_page(page_samsung: SubMenu):
-        page_samsung.page_samsung()
+    def apple_page(submenu: SubMenu):
+        submenu.page_apple()
 
     @staticmethod
-    def xiaomi_page(xiaomi_page: SubMenu):
-        xiaomi_page.page_xiaomi()
+    def samsung_page(submenu: SubMenu):
+        submenu.page_samsung()
 
     @staticmethod
-    def sony_page(sony_page: SubMenu):
-        sony_page.page_sony()
+    def xiaomi_page(submenu: SubMenu):
+        submenu.page_xiaomi()
 
     @staticmethod
-    def realme_page(realme_page: SubMenu):
-        realme_page.page_realme()
+    def sony_page(submenu: SubMenu):
+        submenu.page_sony()
 
     @staticmethod
-    def blackview_page(blackview_page: SubMenu):
-        blackview_page.page_blackview()
+    def realme_page(submenu: SubMenu):
+        submenu.page_realme()
 
     @staticmethod
-    def zte_page(zte_page: SubMenu):
-        zte_page.page_zte()
+    def blackview_page(submenu: SubMenu):
+        submenu.page_blackview()
 
     @staticmethod
-    def oneplus_page(oneplus_page: SubMenu):
-        oneplus_page.page_oneplus()
+    def zte_page(submenu: SubMenu):
+        submenu.page_zte()
 
     @staticmethod
-    def google_page(google_page: SubMenu):
-        google_page.page_google()
+    def oneplus_page(submenu: SubMenu):
+        submenu.page_oneplus()
 
     @staticmethod
-    def other_page(other_page: SubMenu):
-        other_page.page_other()
+    def google_page(submenu: SubMenu):
+        submenu.page_google()
 
     @staticmethod
-    def diagonal_checkbox(diagonal_checkbox: CategoryElements):
-        diagonal_checkbox.diagonal_checkboxes()
+    def other_page(submenu: SubMenu):
+        submenu.page_other_phone()
 
     @staticmethod
-    def mobile_phone_filter_apply(filter_applied: CategoryElements):
-        filter_applied.mobile_phone_page_filter_applied()
+    def health_page(submenu: SubMenu):
+        submenu.page_health()
 
     @staticmethod
-    def tablet_filter_apply(filter_applied: CategoryElements):
-        filter_applied.tablet_page_filter_applied()
+    def mono_page(submenu: SubMenu):
+        submenu.page_mono()
 
     @staticmethod
-    def laptop_filter_apply(filter_applied: CategoryElements):
-        filter_applied.laptop_page_filter_applied()
+    def mouse_page(submenu: SubMenu):
+        submenu.page_mouse()
 
     @staticmethod
-    def headphones_filter_apply(filter_applied: CategoryElements):
-        filter_applied.headphone_page_filter_applied()
+    def acoustic_page(submenu: SubMenu):
+        submenu.page_acoustic()
 
     @staticmethod
-    def smartwatch_filter_apply(filter_applied: CategoryElements):
-        filter_applied.smartwatch_page_filter_applied()
+    def system_unit_page(submenu: SubMenu):
+        submenu.page_system_unit()
 
     @staticmethod
-    def constructor_filter_apply(filter_applied: CategoryElements):
-        filter_applied.constructor_page_filter_applied()
+    def ram_page(submenu: SubMenu):
+        submenu.page_ram()
 
     @staticmethod
-    def photo_filter_apply(filter_applied: CategoryElements):
-        filter_applied.photo_page_filter_applied()
+    def rom_page(submenu: SubMenu):
+        submenu.page_rom()
 
     @staticmethod
-    def tv_filter_apply(filter_applied: CategoryElements):
-        filter_applied.tv_page_filter_applied()
+    def microphone_page(submenu: SubMenu):
+        submenu.page_microphone()
 
     @staticmethod
-    def console_filter_apply(filter_applied: CategoryElements):
-        filter_applied.console_page_filter_applied()
+    def webcam_page(submenu: SubMenu):
+        submenu.page_webcam()
 
     @staticmethod
-    def coffee_filter_apply(filter_applied: CategoryElements):
-        filter_applied.coffee_page_filter_applied()
+    def quad_page(submenu: SubMenu):
+        submenu.page_quad()
+
+    @staticmethod
+    def gps_page(submenu: SubMenu):
+        submenu.page_gps()
+
+    @staticmethod
+    def camera_page(submenu: SubMenu):
+        submenu.page_camera()
+
+    @staticmethod
+    def router_page(submenu: SubMenu):
+        submenu.page_router()
+
+    @staticmethod
+    def vacuum_cleaner_page(submenu: SubMenu):
+        submenu.page_vacuum_cleaner()
+
+    @staticmethod
+    def lamp_page(submenu: SubMenu):
+        submenu.page_lamp()
+
+    @staticmethod
+    def dryer_page(submenu: SubMenu):
+        submenu.page_dryer()
+
+    @staticmethod
+    def toothbrush_page(submenu: SubMenu):
+        submenu.page_toothbrush()
+
+    @staticmethod
+    def amateur_camera_page(submenu: SubMenu):
+        submenu.page_amateur_camera()
+
+    @staticmethod
+    def pro_camera_page(submenu: SubMenu):
+        submenu.page_pro_camera()
+
+    @staticmethod
+    def lens_page(submenu: SubMenu):
+        submenu.page_lens()
+
+    @staticmethod
+    def diagonal_checkbox(category: CategoryElements):
+        category.diagonal_checkboxes()
+
+    @staticmethod
+    def mobile_phone_filter_apply(category: CategoryElements):
+        category.mobile_phone_page_filter_applied()
+
+    @staticmethod
+    def tablet_filter_apply(category: CategoryElements):
+        category.tablet_page_filter_applied()
+
+    @staticmethod
+    def laptop_filter_apply(category: CategoryElements):
+        category.laptop_page_filter_applied()
+
+    @staticmethod
+    def headphones_filter_apply(category: CategoryElements):
+        category.headphone_page_filter_applied()
+
+    @staticmethod
+    def smartwatch_filter_apply(category: CategoryElements):
+        category.smartwatch_page_filter_applied()
+
+    @staticmethod
+    def constructor_filter_apply(category: CategoryElements):
+        category.constructor_page_filter_applied()
+
+    @staticmethod
+    def photo_filter_apply(category: CategoryElements):
+        category.photo_page_filter_applied()
+
+    @staticmethod
+    def tv_filter_apply(category: CategoryElements):
+        category.tv_page_filter_applied()
+
+    @staticmethod
+    def console_filter_apply(category: CategoryElements):
+        category.console_page_filter_applied()
+
+    @staticmethod
+    def coffee_filter_apply(category: CategoryElements):
+        category.coffee_page_filter_applied()
